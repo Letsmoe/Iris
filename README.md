@@ -3,12 +3,11 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
 <div align="center">
   <a href="https://github.com/Letsmoe/iris">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.svg" alt="Logo" width="280" height="280">
   </a>
 
 <h3 align="center">IRIS</h3>
@@ -33,7 +32,6 @@
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-
 
 ## Prerequisites
 
@@ -72,7 +70,6 @@ The project ships with an in-browser graphical user interface as well as a stand
 
 See the [open issues](https://github.com/Letsmoe/iris/issues) for a full list of proposed features (and known issues).
 
-
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -100,5 +97,3 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 [issues-url]: https://github.com/Letsmoe/iris/issues
 [license-shield]: https://img.shields.io/github/license/Letsmoe/iris.svg?style=for-the-badge
 [license-url]: https://github.com/Letsmoe/iris/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username

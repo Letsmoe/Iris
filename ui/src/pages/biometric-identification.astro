@@ -1,0 +1,85 @@
+---
+import Card from '@components/Card.svelte';
+import Layout from '../layouts/Layout.astro';
+import { Cube } from "radix-svelte-icons"
+import DeviceListEntry from '@components/DeviceListEntry.svelte';
+import { DeviceStatus, DeviceType } from 'src/types';
+import LiveFeedCard from '@components/LiveFeedCard.svelte';
+---
+
+<Layout title="Iris">
+	<div class="grid grid-cols-[300px,1fr]">
+		<div class="border-r border-r-base-300 pt-16 pb-8 flex flex-col justify-between">
+			<h1 class="px-4">Views</h1>
+			<div class="flex flex-col gap-4">
+				<a class="border-l-8 border-l-violet-600 px-4 text-violet-600 no-underline">My Views</a>
+				<a class="px-4 border-l-8 border-l-transparent no-underline">Recent Views</a>
+				<a class="px-4 border-l-8 border-l-transparent no-underline">Shared Views</a>
+			</div>
+			<div class="border-t border-t-base-300 mt-auto px-4">
+				<h2 class="mt-4">Case Manager</h2>
+				<div class="flex flex-row gap-4">
+					<span class="text-6xl font-bold text-white bg-base-200 border border-base-300 w-[80px] h-auto flex items-center justify-center aspect-square">5</span>
+					<div class="bg-base-200 border border-base-300 flex flex-col p-4 w-full">
+						<span class="text-white">News Reports</span>
+						<span class="text-gray-600">Today</span>
+					</div>
+				</div>
+				<button class="btn btn-primary w-full mt-4">Create Report</button>
+			</div>
+		</div>
+		
+		<div class="w-full h-screen grid grid-cols-4 gap-4 p-4">
+			<Card header='Device List'>
+				<div class="flex flex-col gap-2 max-h-[400px]">
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 2' status={DeviceStatus.OFFLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 3' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 4' status={DeviceStatus.UNKNOWN} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+				</div>
+			</Card>
+			<Card header='Event Details'>
+				<div class="flex flex-col gap-2 max-h-[400px]">
+					<DeviceListEntry name='Ware House Cam 4' status={DeviceStatus.UNKNOWN} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+				</div>
+			</Card>
+			<div class="col-span-2">
+				<LiveFeedCard name='Parking Garage 1'></LiveFeedCard>
+			</div>
+			<Card header='Device List'>
+				<div class="flex flex-col gap-2 max-h-[400px]">
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 1' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 2' status={DeviceStatus.OFFLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 3' status={DeviceStatus.ONLINE} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+					<DeviceListEntry name='Ware House Cam 4' status={DeviceStatus.UNKNOWN} tags={["Building A"]} type={DeviceType.CAMERA}></DeviceListEntry>
+				</div>
+			</Card>
+			<div class="grid grid-cols-2 col-span-3 row-span-1 gap-4">
+				<LiveFeedCard name='Parking Garage 1'></LiveFeedCard>
+				<LiveFeedCard name='Parking Garage 1'></LiveFeedCard>
+				<LiveFeedCard name='Parking Garage 1'></LiveFeedCard>
+				<LiveFeedCard name='Parking Garage 1'></LiveFeedCard>
+			</div>
+		</div>
+	</div>
+</Layout>

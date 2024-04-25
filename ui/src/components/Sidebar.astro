@@ -1,0 +1,27 @@
+---
+import {Person, Link2, Cube, Gear} from "radix-svelte-icons";
+import ReactiveSvg from "./ReactiveSvg.svelte";
+---
+
+<aside class="border-r border-r-base-300 w-full h-full px-4 py-4 flex flex-col gap-2 items-center justify-between">
+	<div class="flex flex-col items-center gap-2">
+		<div class="mb-8">
+			<ReactiveSvg src="/logo.svg" width={40}></ReactiveSvg>
+		</div>
+		<div class="tooltip tooltip-right" data-tip="Biometric Identification">
+			<a class="btn btn-square btn-ghost p-1" href="/biometric-identification"><Person width={20} height={20}></Person></a>
+		</div>
+		<div class="tooltip tooltip-right" data-tip="Relationships">
+			<a class="btn btn-square btn-ghost p-1"><Link2 width={20} height={20}></Link2></a>
+		</div>
+		<div class="tooltip tooltip-right" data-tip="Object Detection">
+			<a class="btn btn-square btn-ghost p-1"><Cube width={20} height={20}></Cube></a>
+		</div>
+	</div>
+	<div class="flex flex-col items-center gap-2">
+		<div class="tooltip tooltip-right" data-tip="Settings">
+			<a class="btn btn-square btn-ghost p-1"><Gear width={20} height={20}></Gear></a>
+		</div>
+	</div>
+
+</aside>

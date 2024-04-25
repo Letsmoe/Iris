@@ -7,7 +7,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/Letsmoe/iris">
-    <img src="images/logo.svg" alt="Logo" width="280" height="280">
+	<picture>
+	<source srcset="images/logo-white.svg" media="(prefers-color-scheme: dark)">
+	<img src="images/logo.svg" width="300" alt="">
+	</picture>
   </a>
 
 <h3 align="center">IRIS</h3>
